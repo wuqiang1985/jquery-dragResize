@@ -4,7 +4,7 @@
  *
  */
 ;(function(doc) {
-    $.fn.DragResize = function() {
+    $.fn.dragResize = function() {
         var position = false,
             size = false,
             direction,
