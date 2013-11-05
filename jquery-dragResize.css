@@ -1,0 +1,52 @@
+.dot {
+    position:absolute;
+    background:red;
+    width:6px;
+    height:6px;
+    z-index:10;
+    font-size:0;
+}
+#ld,#ru {
+    cursor:ne-resize;
+}
+#rd,#lu {
+    cursor:nw-resize;
+}
+#r,#l {
+    cursor:e-resize;
+}
+#u,#d {
+    cursor:n-resize;
+}
+#rd {
+    bottom:-3px;
+    right:-3px;
+}
+#ld {
+    bottom:-3px;
+    left:-3px;
+}
+#ru {
+    top:-3px;
+    right:-3px;
+}
+#lu {
+    top:-3px;
+    left:-3px;
+}
+#r {
+    right:-3px;
+    top:50%;
+}
+#l {
+    left:-3px;
+    top:50%;
+}
+#u {
+    top:-3px;
+    left:50%;
+}
+#d {
+    bottom:-3px;
+    left:50%;
+}
