@@ -11,7 +11,6 @@
         return this.each(function() {
             var doc = document,
                 defaultSettings = {
-                    onMouseDown: null,
                     onMouseUp: null
                 },
                 settings = $.extend({}, defaultSettings, options),
