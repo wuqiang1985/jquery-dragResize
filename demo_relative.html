@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Drag & Resize</title>
+    <meta name="keywords" content="Drag & Resize">
+    <meta name="description" content="Drag & Resize">
+    <link href="jquery-dragResize.css" rel="stylesheet">
+    <style type="text/css"> 
+        #container {
+            height:100px;
+            width:100px;
+            border:1px solid #000;
+            position:absolute;
+            left:100px;
+            top:100px;
+            cursor:move;
+        }
+        #container1 {
+            height:100px;
+            width:100px;
+            border:1px solid #000;
+            position:absolute;
+            left:100px;
+            top:250px;
+            cursor:move;
+        }
+        #page {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            top: 50px;
+            left: 50px;
+            background-color: yellow;
+        }
+    </style> 
+</head>
+<body>
+    <div id="page">
+        <div id="container" class="box"></div> 
+        <div id="container1"  class="box"></div>
+    </div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="jquery-dragResize.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#container").dragResize();
+            $("#container1").dragResize().css('background-color', '#000');
+            //$(".box").dragResize();
+        });
+    </script>
+</body>
+</html>
